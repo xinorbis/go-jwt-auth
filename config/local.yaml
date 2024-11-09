@@ -1,0 +1,18 @@
+﻿env: "local"
+token:
+  access_token_ttl: 10m
+  refresh_token_ttl: 720h
+db:
+  name: "auth_service"
+  port: "5432"
+  host: "db"
+  user: "postgres"
+  password: "admin"
+  sslMode: "disable"
+  timeZone: "europe/moscow"
+  migrate_test_data: true
+  use_orm_migrations: true
+server:
+  address: ":8080"
+  timeout: 4s
+  idle_timeout: 60s
